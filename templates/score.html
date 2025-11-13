@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block title %}Score{% endblock %}
+
+{% block content %}
+  <h1>Score</h1>
+
+<ul>
+ <li> Your answer to Question 1 was: {{ session['year2000'] }} </li>
+ <li> Your answer to Question 2 was: {{ session['gravity'] }} </li>
+ <li> Your answer to Question 3 was: {{ session['joker'] }} </li>
+ <li> Your answer to Question 4 was: {{ session['elements'] }} </li>
+ <li> Your answer to Question 5 was: {{ session['australia'] }} </li>
+</ul>
+
+
+
+{% endblock %}

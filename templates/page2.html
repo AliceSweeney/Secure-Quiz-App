@@ -1,13 +1,14 @@
 {% extends "layout.html" %}
 
-{% block title %}Page 2: Ask for your favorite color{% endblock %}
+{% block title %}Question 2{% endblock %}
 
 {% block content %}
   <h1>Page 2: Ask for favorite color</h1>
 
  <form action={{ url_for("renderPage3") }} method="POST">
-  Favorite Color:<br>
-  <input type="text" name="favoriteColor">
+  What is the acceleration due to gravity on Earth?<br> <!--Correct answer -9.8 meters per second squared-->
+  <input type="text" name="gravity">
+  <br>
   <input type="submit" value="Submit">
  </form> 
 

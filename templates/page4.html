@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title %}Question 4{% endblock %}
+
+{% block content %}
+  <h1>Question 3</h1>
+
+ <form action={{ url_for("renderPage5") }} method="POST">
+  How many elements rae on the periodic table?<br> <!--Correct answer 118-->
+  <input type="text" name="elements">
+  <br>
+  <input type="submit" value="Submit">
+ </form> 
+
+
+
+{% endblock %}

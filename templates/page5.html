@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title %}Question 5{% endblock %}
+
+{% block content %}
+  <h1>Question 5</h1>
+
+ <form action={{ url_for("renderScore") }} method="POST">
+  Who was the Australian Prime Minister in 2003?<br> <!--Correct answer John Howard-->
+  <input type="text" name="australia">
+  <br>
+  <input type="submit" value="Submit">
+ </form> 
+
+
+
+{% endblock %}
