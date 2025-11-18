@@ -3,16 +3,36 @@
 {% block title %}Score{% endblock %}
 
 {% block content %}
-  <h1>Score</h1>
+<h1>Score</h1>
 
-<ul>
- <li> Your answer to Question 1 was: {{ session['year2000'] }} </li>
- <li> Your answer to Question 2 was: {{ session['gravity'] }} </li>
- <li> Your answer to Question 3 was: {{ session['joker'] }} </li>
- <li> Your answer to Question 4 was: {{ session['elements'] }} </li>
- <li> Your answer to Question 5 was: {{ session['australia'] }} </li>
-</ul>
-
+<div class="score">
+	<p>Your answer to Question 1 was: {{ session['year2000'] }}</p>
+	<p>That is {{ questionStatus1 }}</p>
+</div>
+<div class="score">
+	<p>Your answer to Question 2 was: {{ session['gravity'] }}</p>
+	<p>That is {{ questionStatus2 }}</p>
+</div>
+<div class="score">	
+	<p>Your answer to Question 3 was: {{ session['joker'] }}</p>
+	<p>That is {{ questionStatus3 }}</p>
+</div>
+<div class="score">	
+	<p>Your answer to Question 4 was: {{ session['elements'] }}</p>
+	<p>That is {{ questionStatus4 }}</p>
+</div>
+<div class="score">	
+	<p>Your answer to Question 5 was: {{ session['australia'] }}</p>
+	<p>That is {{ questionStatus5 }}</p>
+</div>
+<div class="score">	
+	<p>Your answer to Question 6 was: {{ session['swallow'] }}</p>
+	<p>That is {{ questionStatus6 }}</p>
+</div>
+<div class="score">
+	<p>Your total score was {{ score }}%</p>
+	<p>Your time for this attempt was {{ time }} seconds</p>
+</div>
 
 
 {% endblock %}

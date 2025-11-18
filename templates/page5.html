@@ -5,9 +5,9 @@
 {% block content %}
   <h1>Question 5</h1>
 
- <form action={{ url_for("renderScore") }} method="POST">
-  Who was the Australian Prime Minister in 2003?<br> <!--Correct answer John Howard-->
-  <input type="text" name="australia">
+ <form action={{ url_for("renderPage6") }} method="POST">
+  <p>Who was the Australian Prime Minister in 2003?</p> <!--Correct answer John Howard-->
+  <input type="text" name="australia" required>
   <br>
   <input type="submit" value="Submit">
  </form> 

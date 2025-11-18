@@ -5,9 +5,9 @@
 {% block content %}
   <h1>Question 1</h1>
 
- <form action={{ url_for("renderPage2") }} method="POST">
-  How many days were in the year 2000?<br> <!--Correct answer 366-->
-  <input type="text" name="year2000">
+ <form action={{ url_for("renderPage2") }} method="POST"> <!--add autocomplte = off at end to all-->
+  <p>How many days were in the year 2000?</p> <!--Correct answer 366-->
+  <input type="text" name="year2000" required>
   <br>
   <input type="submit" value="Submit">
  </form> 
